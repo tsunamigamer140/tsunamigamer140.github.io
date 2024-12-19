@@ -14,18 +14,26 @@ header {
     text-align: center;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
+.main-panel nav{
+    background-color: #000000;
+    height: 10%;
+    display: flex;
+    align-items: center;
 }
 
-header nav ul li {
+.main-panel nav ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.main-panel nav ul li {
     display: inline;
     margin: 0 15px;
 }
 
-header nav ul li a {
-    color: #fff;
+.main-panel nav ul li a {
+    color: #ffffff;
     text-decoration: none;
 }
 

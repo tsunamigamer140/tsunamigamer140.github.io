@@ -3,41 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Personal Website</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        .side-panel {
+            width: 30%;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .side-panel img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .side-panel h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .side-panel p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .side-panel a {
+            color: #1abc9c;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .main-panel {
+            flex-grow: 1;
+            padding: 40px;
+            background-color: #ecf0f1;
+            box-sizing: border-box;
+        }
+
+        .main-panel h2 {
+            margin-top: 0;
+        }
+
+        .main-panel p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .side-panel {
+                width: 100%;
+                align-items: flex-start;
+            }
+
+            .main-panel {
+                padding: 20px;
+            }
+
+            nav {
+                background-color: black;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+            }
+
+            nav ul li {
+                margin: 0 15px;
+            }
+
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+                padding: 14px 20px;
+                display: block;
+            }
+
+            nav ul li a:hover {
+                background-color: lightgray;
+                color: black;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>My Resume</h1>
+    <div class="side-panel">
+        <img src="profile.jpg" alt="Profile Picture">
+        <h1>Ashwin Jose Thomas</h1>
+        <p>Date: January 14, 2024</p>
+        <p>Phone: <a href="tel:+918904868695">+91 8904868695</a></p>
+        <p>Email: <a href="mailto:ashwin10ben@gmail.com">ashwin10ben@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/ashwin-jose-thomas-6b450b309/" target="_blank">My LinkedIn</a></p>
+    </div>
+    <div class="main-panel">
         <nav>
             <ul>
+                <li><a href="biodata.html">Biodata</a></li>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="biodata.html">Bio-data</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
         <section>
             <h2>Education</h2>
             <ul>
-                <li>Bachelor’s Degree in Computer Science</li>
-                <li>High School Diploma</li>
+                <li>10th Standard ICSE in St. Joseph's Boys' High School</li>
+                <li>12th Standard PUC in Christ Junio College</li>
+                <li>Bachelor’s Degree in Computer Science Engineering from CMR Insititute of Technology</li>
             </ul>
         </section>
         <section>
             <h2>Skills</h2>
             <ul>
-                <li>Programming: HTML, CSS, JavaScript</li>
-                <li>Tools: Git, VS Code</li>
+                <li>Programming: Python, Java, C, C++, Dart</li>
+                <li>Tools: Flutter, ArduinoIDE, Visual Studio Code, Android Studio</li>
             </ul>
         </section>
         <section>
             <h2>Experience</h2>
-            <p>Worked on several web development projects, building responsive and interactive websites.</p>
+            <p>Worked on several embedded systems projects involving ESP32 and ESP8266 NodeMCUs. Also have expereience with Dart in Flutter and have won Smart India Hackathon using a Flutter application.</p>
         </section>
-    </main>
-    <footer>
-        <p>© 2024 [Your Name]. All Rights Reserved.</p>
-    </footer>
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li>Smart Home Automation System using ESP32</li>
+                <li>Smart Water Management System using ESP8266</li>
+                <li>Smart India Hackathon 2024 Winner: Pact Privacy Application w/ Flutter</li>
+        </section>
+    </div>
 </body>
 </html>
